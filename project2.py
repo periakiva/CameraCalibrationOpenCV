@@ -3,17 +3,6 @@ import cv2
 import glob
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
-"""
-def draw(img, corners, imgpts):
-	corner = tuple(corners[0].revel())
-	img = cv2.line(img,corner,tuple(imgpts[0].revel()), (255,0,0), 5)
-	img = cv2.line(img,corner,tuple(imgpts[1].revel()), (0,255,0), 5)
-	img = cv2.line(img,corner,tuple(imgpts[2].revel()), (0,0,255), 5)
-	return img
-
-with np.load('B.npz') as X:
-	mtx, dist, _, _ = [X[i] for i in ('K','D','rvecs','tvecs')]
-"""
 
 criteria = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER,30,0.001)
 objp=np.zeros((8*6,3),np.float32)
