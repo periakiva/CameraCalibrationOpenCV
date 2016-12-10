@@ -10,7 +10,7 @@ objp[:,:2]=np.mgrid[0:8,0:6].T.reshape(-1,2)
 
 imgpoints = []
 objpoints = []
-images = glob.glob('*.jpg')
+images = glob.glob('/path/to/images/*.jpg')
 print "hello"
 print (images)
 for fname in images:
