@@ -27,7 +27,7 @@ for fname in images:
 		print "hello"
 		cv2.drawChessboardCorners(img,(8,6),corners,ret)
 		cv2.imshow('img',img)
-		cv2.imwrite('imageCalibration.JPG',img)
+		cv2.imwrite('imageCalibration.jpg',img)
 		cv2.waitKey(500)
 cv2.destroyAllWindows()
 
